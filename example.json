@@ -1,0 +1,13 @@
+{
+	"connection_string": "DSN=someserver;Uid=someuser;Pwd=sompassword;"
+	,"sql_select": "SELECT * FROM SomeTable WHERE LastUpdated >= '??'"
+	,"use_delta":	true
+	,"delta_connection_string":  "DSN=someserver;Uid=someuser;Pwd=sompassword;"
+	,"delta_sql_select":  "SELECT MAX(LastUpdated) FROM SomeTable"
+	, "text_file": "MyFile"
+	, "append_timestamp_to_text_file":	true
+	, "text_file_extension":  "csv"
+	, "delimeter": ","
+	, "zip_the_file":	true
+
+}
